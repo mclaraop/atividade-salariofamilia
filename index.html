@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário-Família - Previdência Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/salario-familia.jpg" alt="Banner Salário-Família">
+    </header>
+
+    <main>
+        <form id="salario-familia-form">
+            <!-- Campo Empregado -->
+            <label for="empregado">Empregado</label>
+            <input type="text" id="empregado" name="empregado" placeholder="Nome do Empregado" required>
+
+            <!-- Quantidade de filhos menores de 14 anos ou inválidos -->
+            <label for="filhos">Quantidade de filhos menores de 14 anos ou inválidos</label>
+            <select id="filhos" name="filhos" required>
+                <option value="">Selecione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 ou mais</option>
+            </select>
+
+            <!-- Salário Contribuição -->
+            <label for="salario">Salário Contribuição</label>
+            <select id="salario" name="salario" required>
+                <option value="">Selecione</option>
+                <option value="1">Até R$ 806,80</option>
+                <option value="2">Entre R$ 806,81 e R$ 1.212,64</option>
+                <option value="3">Mais de R$ 1.212,64</option>
+            </select>
+
+            <!-- Tabela de Cotas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Salário-contribuição</th>
+                        <th>Cota do Salário-Família</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Até R$ 806,80</td>
+                        <td>R$ 41,37 por filho</td>
+                    </tr>
+                    <tr>
+                        <td>Entre R$ 806,81 e R$ 1.212,64</td>
+                        <td>R$ 29,16 por filho</td>
+                    </tr>
+                    <tr>
+                        <td>Mais de R$ 1.212,64</td>
+                        <td>Não há</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Botão Calcular -->
+            <button type="submit">Calcular</button>
+        </form>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
